@@ -55,7 +55,7 @@ nav a:hover{
 /** Sección principal **/
 .seccion1{
     width: 90vw;
-    height: 80vh;
+    height: 78vh;
     background: url(../img/imagen-bar3.jpg);
     margin: 10px auto;
     border-radius: 5px;
@@ -221,8 +221,7 @@ footer p{
         margin-bottom: 10px;
     }
     .seccion1{
-        width: 100%;
-        height: 100%;
+        height: 65vh;
         margin: 25px auto 5px;
     }
     .blank{
@@ -230,7 +229,7 @@ footer p{
     }
     .derecha{
         width: 100%;
-        height: 100%;
+        height: 90%;
         padding: 25px;
         padding-bottom: 50px;
         font-size: 0.9em;
@@ -278,6 +277,9 @@ footer p{
     .blank{
         display: none;
     }
+    .seccion1{
+        height: 69vh;
+    }
     .derecha{
         width: 100%;
         height: 90%;
@@ -297,11 +299,11 @@ footer p{
     nav a{
         font-size: 1.1em;
     }
-    .seccion1{
-        height: 90%;
-    }
     .blank{
         display: none;
+    }
+    .seccion1{
+        height: 78vh;
     }
     .derecha{
         width: 100%;
