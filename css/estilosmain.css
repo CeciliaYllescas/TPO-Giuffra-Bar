@@ -178,6 +178,7 @@ footer{
 }
 .redes a{
     width: 50px;
+    margin:  0 15px;
 }
 .redes i{
     width: 50px;
@@ -250,8 +251,8 @@ footer p{
 
     .redes a{
         font-size: 1em;
-        margin: 10px;
     }
+
     footer p{
         font-size: 0.8em;
     }
@@ -290,10 +291,14 @@ footer p{
         font-size: 1em;
         margin: 10px 0;
     }
+  
 }
 @media only screen and (min-width:768px) and (max-width: 991px){
+    nav a{
+        font-size: 1.1em;
+    }
     .seccion1{
-        height: 50vh;
+        height: 90%;
     }
     .blank{
         display: none;
@@ -302,11 +307,18 @@ footer p{
         width: 100%;
         margin: 40px 50px;
         height: 90%;
+        font-size: 1.em;
     }
     .derecha p{
         margin: 10px 0;
     }
+    .card{
+        min-width: 300px;
+        min-height: 520px;
+    }
+  
 }
+    
 /*Dónde estamos*/
 .mapa{
     display: flex;
@@ -502,4 +514,3 @@ footer p{
         width: 90%;
     }
 }
-
