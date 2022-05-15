@@ -18,12 +18,10 @@
             </div>
             <div class="nav-container">
                 <nav>
-                    <ul>
-                        <li><a href="index.html">Inicio</a></li>
-                        <li><a href="sobre.html">Sobre nosotros</a></li>
-                        <li><a href="donde-estamos.html">Dónde estamos</a></li>
-                        <li><a href="contacto.html">Contacto</a></li>  
-                    </ul>
+                    <a href="index.html">Inicio</a>
+                    <a href="sobre.html">Nosotros</a>
+                    <a href="donde-estamos.html">Encontranos</a>
+                    <a href="contacto.html">Contacto</a>
                 </nav>
             </div>
         </div> 
@@ -36,15 +34,15 @@
                 <form action="">
                     <div class="form-input">
                         <label for="">Nombre</label> <br>
-                        <input type="text" placeholder="Camila">
+                        <input type="text" placeholder="Camila" id="nombre">
                     </div>
                     <div class="form-input">
                         <label for="">Apellido</label> <br>
-                        <input type="text" placeholder="Pérez">
+                        <input type="text" placeholder="Pérez" id="apellido">
                     </div>
                     <div class="form-input">
                         <label for="">Email</label> <br>
-                        <input type="email" placeholder="camilaperez@gmail.com">
+                        <input type="email" placeholder="camilaperez@gmail.com" id="email">
                     </div>
                     <div class="check">
                         <input type="radio" name="" id="">
@@ -52,7 +50,7 @@
 
                     </div>
                     <div class="form-button">
-                            <input type="submit">
+                            <input type="submit" id="button">
                     </div>
                 </form>
             </div>
@@ -68,5 +66,6 @@
         </div>
         <p>Todos los derechos reservados</p>
     </footer>
+    <script src="./js/main.js"></script>
 </body>
 </html>
