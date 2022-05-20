@@ -369,7 +369,6 @@ footer p{
 
 
 /*Suscripción*/
-
 .suscripcion{
     width: 100%;
 }
@@ -379,145 +378,136 @@ footer p{
     font-size: 2em;
 }
 
-.formulario{
-    width: 50%;
-    height: auto;
-    margin: 50px auto;
+.form-container{
+    width: 60%;
     border: 3px dashed #000;
-    padding: 50px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    margin: 50px auto;
+    padding: 25px;
+}
+.formulario{
+   width: 90%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   margin: 25px auto;
 }
 
-.formulario label{
-    font-weight: 600;
-    font-size: 1.1em;
+.formulario__label{
+    display: block;
+    font-weight: 700;
+    padding: 10px;
+    cursor: pointer;
 }
-.formulario .form-input input{
-    margin: 15px 0;
-    width: 95%;
-    height: 35px;
-    border: none;
+
+.formulario__input{
+width: 90%;
+background: #fff;
+outline: none;
+border: none;
+border-bottom: 1px solid #000;
+height: 45px;
+line-height: 45px;
+padding: 0 40px 0 10px;
+transition: .3s ease all;
+margin-bottom: 5px;
+}
+
+.formulario__input:focus{
     outline: none;
-    border-bottom: 1px solid #444;
-}
-.formulario .form-input input:focus{
     background: linear-gradient(to bottom, #fff, #ddd);
 }
-.formulario .check{
-    display: flex;
-    align-items: center;
-    width: 95%;
-    margin: 10px auto;
+
+.formulario__input-error{
+    font-size: 12px;
+    margin-bottom: 0;
+    display: none;
 }
-.formulario .check label{
+
+.formulario__input-error-activo{
+    display: block;
+}
+
+.form-checkbox{
+    display: flex;
+    margin: 20px auto;
+    align-items: center;
+    width: 80%;
+
+}
+.form-checkbox label{
     font-size: 0.8em;
     font-weight: 400;
     width: 100%;
     text-align: left;
 }
-.formulario .check input{
+.form-checkbox input{
     padding: 0;
-    width: 5%;
+    width: 10%;
+}
+.formulario__mensaje {
+    height: auto;
+    background-color: #f66868;
+    padding: 5px 15px;
+    border-radius: 3px;
+    display: none;
 }
 
+.formulario__mensaje-activo{
+    display: block;
+}
 
-.formulario .form-button input{
-    width: 100px;
-    height: auto;
-    margin: 15px auto 0;
-    padding: 15px ;
-    background-color: #000;
-    color: #fff;
-    text-align: center;
+.formulario__grupo-btn-enviar{
+    width: 100%;
+    margin: 8px
+}
+.formulario__btn{
+    width: 20%;
+    min-width: 100px;
+    padding: 15px 10px;
     border: none;
     border-radius: 3px;
-}
-.formulario .form-button input:hover{
-    background: #a30c0c;
-}
-/*Responsive formulario suscripción*/
-
-@media only screen and (max-width: 600px){
-    .formulario{
-        width: 90%;
-    }
-    .formulario .form-input input{
-        margin: 15px 0;
-        width: 100%;
-    }
-
+    background-color: #000;
+    color: #fff;
+    margin-bottom: 25px;
 }
 
-@media only screen and (min-width: 601px) and (max-width: 930px){
-    .formulario{
-        width: 80%;
-    }
+.formulario__btn:hover{
+    background-color: #a30c0c;
 }
-/* Sobre nosotros*/
-.sobre-texto-h2{
-    text-align: center;
-    margin: 25px auto 15px;
-}
-.sobre-texto-h2 h2{
-    font-size: 2em;
-}
-.sobre-imagenes-container{
-    width: 95%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin: 25px auto;
-}
-.sobre-imagen{
-    width: 350px;
-    margin: 10px;
-}
-.sobre-imagen img{
+
+.formulario__mensaje-exito{
     width: 100%;
+    font-size: 14px;
     height: auto;
-    border-radius: 5px;
+    background: #79f668;
+    padding: 5px 15px;
+    border-radius: 3px;
+    display: none;
 }
-.sobre-texto-p{
-    width: 80%;
-    text-align: center;
-    margin: 45px auto;
-}
-
-/*Contacto*/
-.contacto{
-    width: 100%;
-    height: 65vh;
-    display: flex;
-    align-items: center;
-}
-.contacto-textos{
-    text-align: center;
-    border: 3px dashed #000;
-    width: 50%;
-   margin: 50px auto;
-   padding: 55px;
-}
-.contacto-textos h2{
-    font-size: 2em;
-    margin: 25px auto;
-}
-.contacto-textos p{
-    margin: 25px auto;
-}
-.contacto h2{
-    font-size: 1.5em;
-    margin: 25px auto;
-    text-align: center;
+.formulario__mensaje-exito-activo{
+    display: block;
 }
 
-@media only screen and (max-width: 600px){
-    .contacto{
-        height: 50vh;
-    }
-    .contacto-textos{
+/* Estilos para validación*/
+
+.formulario__grupo-incorrecto .formulario__label{
+    color: #bb2929;
+}
+
+.formulario__grupo-incorrecto .formulario__input{
+    border: 3px solid #bb2929;
+}
+
+.formulario__mensaje-exito .formulario__mensaje-activo{
+    display: block;
+}
+
+/* Responsive del form*/
+@media only screen and (max-width: 800px){
+    .form-container{
         width: 90%;
     }
+    
 }

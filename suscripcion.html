@@ -30,30 +30,54 @@
     <body>
         <div class="suscripcion">
             <h2>¡Suscribite a nuestro <span>newsletter</span>!</h2>
-            <div class="formulario">
-                <form action="">
-                    <div class="form-input">
-                        <label for="">Nombre</label> <br>
-                        <input type="text" placeholder="Camila" id="nombre">
+            <div class="form-container">
+               <form action="" id="formulario" class="formulario">
+                   <!-- Grupo Nombre-->
+                    <div class="formulario__grupo" id="grupo__nombre">
+                        <label for="nombre" class="formulario__label">Nombre</label>
+                        <div class="formulario__grupo-input">
+                            <input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="Escriba su nombre">
+                        </div>
+                        <p class="formulario__input-error">El nombre solo puede contener letras y espacios</p>
                     </div>
-                    <div class="form-input">
-                        <label for="">Apellido</label> <br>
-                        <input type="text" placeholder="Pérez" id="apellido">
-                    </div>
-                    <div class="form-input">
-                        <label for="">Email</label> <br>
-                        <input type="email" placeholder="camilaperez@gmail.com" id="email">
-                    </div>
-                    <div class="check">
-                        <input type="radio" name="" id="check">
-                        <label for="">Acepto recibir información vía mail</label>
 
+                    <!-- Grupo Apellido-->
+                    <div class="formulario__grupo" id="grupo__apellido">
+                        <label for="apellido" class="formulario__label">Apellido</label>
+                        <div class="formulario__grupo-input">
+                            <input type="text" class="formulario__input" name="apellido" id="apellido" placeholder="Escriba su apellido">
+                        </div>
+                        <p class="formulario__input-error">El apellido solo puede contener letras y espacios</p>
                     </div>
-                    <div class="form-button">
-                            <input type="submit" id="button">
+
+                    <!-- Grupo Email-->
+                    <div class="formulario__grupo" id="grupo__email">
+                        <label for="email" class="formulario__label">Email</label>
+                        <div class="formulario__grupo-input">
+                            <input type="text" class="formulario__input" name="email" id="email" placeholder="correo@correo.com">
+                        </div>
+                        <p class="formulario__input-error">El email solo puede contener letras, números, puntos, guiones y guión bajo </p>
                     </div>
-                </form>
-            </div>
+
+                    <!-- Grupo Terminos y Condiciones-->
+                    <div class="formulario__grupo form-checkbox" id="grupo__terminos">
+                        <input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos">
+                        <label class="formulario__label-checkbox">Acepto recibir info-mails</label>
+                    </div>
+
+                    <div class="formulario__mensaje" id="formulario__mensaje">
+                        <p><b>Error:</b> Los datos ingresados son incorrectos.</p>
+                    </div>
+
+                    <div class="formulario__grupo formulario__grupo-btn-enviar">
+                        <button type="submit" class="formulario__btn">Enviar</button>
+                        <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">
+                            <b>El formulario se envió exitosamente.</b>
+                        </p>
+                    </div>
+
+               </form>
+            </div>   
         </div> 
 
         <script src="./js/main.js"></script>
