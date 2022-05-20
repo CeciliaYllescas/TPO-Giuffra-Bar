@@ -443,7 +443,6 @@ footer p{
 @media only screen and (max-width: 600px){
     .formulario{
         width: 90%;
-        
     }
     .formulario .form-input input{
         margin: 15px 0;
