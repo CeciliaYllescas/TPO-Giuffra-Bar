@@ -443,7 +443,7 @@ footer p{
 @media only screen and (max-width: 600px){
     .formulario{
         width: 90%;
-        height: 50vh;
+        
     }
     .formulario .form-input input{
         margin: 15px 0;
@@ -455,7 +455,6 @@ footer p{
 @media only screen and (min-width: 601px) and (max-width: 930px){
     .formulario{
         width: 80%;
-        height: 50vh;
     }
 }
 /* Sobre nosotros*/
